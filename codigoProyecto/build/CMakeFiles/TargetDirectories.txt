@@ -1,0 +1,15 @@
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/CMakeFiles/edit_cache.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/CMakeFiles/rebuild_cache.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/CMakeFiles/edit_cache.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/CMakeFiles/rebuild_cache.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/actividad/CMakeFiles/actividad.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/actividad/CMakeFiles/edit_cache.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/actividad/CMakeFiles/rebuild_cache.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/actividades/CMakeFiles/actividades.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/actividades/CMakeFiles/actividades-main.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/actividades/CMakeFiles/edit_cache.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/actividades/CMakeFiles/rebuild_cache.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/menu/CMakeFiles/menu.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/menu/CMakeFiles/menu-main.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/menu/CMakeFiles/edit_cache.dir
+/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/menu/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/menu-main.dir/menu-main.cc.o -o menu-main  libmenu.a ../actividades/libactividades.a ../actividad/libactividad.a 
