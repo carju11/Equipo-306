@@ -14,6 +14,23 @@ bool Actividades::CrearActividad(Actividad a){
     return true;
   
 }
+bool Actividades::EditarActividad(Actividad a){
+    
+    std::vector <Actividad>::iterator o;
+    bool existe = false;
+    for(o = vectorActividades_.begin() ; o != vectorActividades_.end(); o++){
+        if((*o).GetId() == a.GetId()){
+            (*o).SetAforo(a.GetAforo());
+            (*o).SetDescripcion(a.GetDescripcion());
+            (*o).SetIdAsistentes(a.GetIdAsistentes());
+            (*o).SetIdPonentes(a.GetIdPonentes());
+
+            existe = true;
+            break;
+        }
+    }
+    return existe;
+}
 
 
 bool Actividades::EliminarActividad(Actividad a) {
@@ -32,12 +49,12 @@ bool Actividades::EliminarActividad(Actividad a) {
 
     return existe;
 }
-void Actividades::leerActividadesDesdeArchivo(const std::string& nombreArchivo) {
+void Actividades::leerActividadesDesdeArchivo() {
     std::vector<Actividad> actividades;
-    std::ifstream archivo(nombreArchivo);
+    std::ifstream archivo("fichmenu.txt");
 
     if (!archivo) {
-        std::cerr << "Error al abrir el archivo " << nombreArchivo << std::endl;
+        std::cerr << "Error al abrir el archivo " << "fichmenu.txt" << std::endl;
         // Puedes manejar el error de la manera que prefieras
     }
 
@@ -69,12 +86,35 @@ void Actividades::leerActividadesDesdeArchivo(const std::string& nombreArchivo) 
     }
 
     vectorActividades_ = actividades;
+
+    for(auto o: vectorActividades_){
+          std::cout << "Datos de la Actividad:" << std::endl;
+        std::cout << "----------------------" << std::endl;
+        std::cout << "ID: " << o.GetId() << std::endl;
+        std::cout << "Título: " << o.GetTitulo() << std::endl;
+        std::cout << "Aforo: " << o.GetAforo() << std::endl;
+        std::cout << "Descripción: " << o.GetDescripcion() << std::endl;
+
+        std::cout << "ID Ponentes: ";
+        for (auto idPonente : o.GetIdPonentes()) {
+            std::cout << idPonente << " ";
+        }
+        std::cout << std::endl;
+
+        std::cout << "ID Asistentes: ";
+        for (auto idAsistente : o.GetIdAsistentes()) {
+            std::cout << idAsistente << " ";
+        }
+        std::cout << std::endl;
+
+        std::cout << "----------------------" << std::endl;
+    }
 }
 
-void Actividades::escribirActividadesEnArchivo(const std::string& nombreArchivo) {
-    std::ofstream archivo(nombreArchivo);
+void Actividades::escribirActividadesEnArchivo() {
+    std::ofstream archivo("fichmenu.txt");
     if (!archivo) {
-        std::cerr << "Error al abrir el archivo " << nombreArchivo << " para escritura" << std::endl;
+        std::cerr << "Error al abrir el archivo " << "fichmenu.txt" << " para escritura" << std::endl;
         // Puedes manejar el error de la manera que prefieras
         return;
     }
@@ -95,3 +135,27 @@ void Actividades::escribirActividadesEnArchivo(const std::string& nombreArchivo)
 }
 
 
+void Actividades::actualizarActividadesEnArchivo(){
+    std::ofstream archivo("fichmenu.txt", std::ios::out | std::ios::trunc);
+
+    if (!archivo) {
+        std::cerr << "Error al abrir el archivo " << "fichmenu.txt" << " para escritura" << std::endl;
+        // Puedes manejar el error de la manera que prefieras
+        return;
+    }
+
+    for (auto actividad : vectorActividades_) {
+        archivo << actividad.GetId() << ',' << actividad.GetTitulo() << ',' << actividad.GetAforo() << ',' << actividad.GetDescripcion();
+
+        for (auto ponente : actividad.GetIdPonentes()) {
+            archivo << ',' << ponente;
+        }
+
+        for (auto asistentes : actividad.GetIdAsistentes()) {
+            archivo << ',' << asistentes;
+        }
+
+        archivo << '\n';
+    }
+
+}

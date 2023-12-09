@@ -27,9 +27,12 @@ class Actividades{
 
         bool CrearActividad(Actividad a);
         bool EliminarActividad(Actividad a);
+        bool EditarActividad(Actividad a);
         //bool EditarActividad(Actividad a); es crearActividad pero obligando a rellenar todos los campos de actividad
-        void leerActividadesDesdeArchivo(const std::string& nombreArchivo);
-        void escribirActividadesEnArchivo(const std::string& nombreArchivo);
+        void leerActividadesDesdeArchivo();
+        void escribirActividadesEnArchivo();
+        void escribirActividadesEnConsola();
+        void actualizarActividadesEnArchivo();
         
 };
 
