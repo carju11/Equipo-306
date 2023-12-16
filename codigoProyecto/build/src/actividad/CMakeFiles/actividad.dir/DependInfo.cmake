@@ -1,14 +1,16 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
   )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/carlos/Escritorio/Equipo-306/Equipo-306/codigoProyecto/src/actividad/actividad.cc" "/home/carlos/Escritorio/Equipo-306/Equipo-306/codigoProyecto/build/src/actividad/CMakeFiles/actividad.dir/actividad.cc.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/src/actividad/actividad.cc" "src/actividad/CMakeFiles/actividad.dir/actividad.cc.o" "gcc" "src/actividad/CMakeFiles/actividad.dir/actividad.cc.o.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../src/actividad"
   )
 
 # Targets to which this target links.

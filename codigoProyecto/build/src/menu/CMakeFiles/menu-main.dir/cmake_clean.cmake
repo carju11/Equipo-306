@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/menu-main.dir/menu-main.cc.o"
-  "CMakeFiles/menu-main.dir/menu-main.cc.o.d"
   "menu-main"
   "menu-main.pdb"
 )

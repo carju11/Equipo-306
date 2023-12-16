@@ -18,9 +18,12 @@ int main() {
         // Leer la opción del usuario
         std::cin >> opcion;
         std::string id;
+        std::string titulo;
+        int aforo;
+        std::string descripcion;
         Actividad a = Actividad("0");
         // Realizar la acción correspondiente
-        switch (opcion) {
+        switch(opcion) {
             case 1:{
                 
                 std::cout << "Opción 1 seleccionada (Crear actividad)\n";
@@ -55,29 +58,41 @@ int main() {
             case 3:
                 
                 std::cout << "Opción 3 seleccionada (Editar actividad)\n";
-                int aforo;
-                std::string descripcion;
                 
                 std::cout << "Introduce el ID de la actividad\n";
                 std::cin >> id;
                 a = Actividad(id);
                 if(actividades.EditarActividad(a) == true){
                     std::cout << "Se ha encontrado la actividad id: "<< id <<"\n";
+
+                    std::cout <<"Introduzca titulo a la actividad\n";
+                    std::cin >> titulo;
+
                     std::cout <<"Introduce el aforo de la actividad:\n";
-                    std::cin >> ""
+                    std::cin >> aforo;
+
+                    std::cout <<"Introduce descripcion de la actividad:\n";
+                    std::cin >> titulo;
+
+                    Actividad a2(id,titulo,aforo,descripcion);
+                    actividades.EditarActividad(a2);
                 }else{
                     std::cout<< "No existe un actividad con ese ID\n";
                 }
                 
                 break;
             case 4:
+            {
                 
                 std::cout << "Opción 4 seleccionada (Mostrar actividades)\n";
                 actividades.leerActividadesDesdeArchivo(); 
                 break;
+            }
             case 5:
+            {
                 std::cout << "Saliendo del programa. ¡Hasta luego!\n";
                 break;
+            }
             default:
                 std::cout << "Opción no válida. Inténtelo de nuevo.\n";
                 break;

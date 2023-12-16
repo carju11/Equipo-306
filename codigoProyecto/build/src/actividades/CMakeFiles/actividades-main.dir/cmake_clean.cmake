@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/actividades-main.dir/actividades-main.cc.o"
-  "CMakeFiles/actividades-main.dir/actividades-main.cc.o.d"
   "actividades-main"
   "actividades-main.pdb"
 )

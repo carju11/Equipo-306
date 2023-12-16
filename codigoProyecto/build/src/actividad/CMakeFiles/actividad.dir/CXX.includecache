@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/carlos/Escritorio/Equipo-306/Equipo-306/codigoProyecto/src/actividad/actividad.cc
+actividad.h
+/home/carlos/Escritorio/Equipo-306/Equipo-306/codigoProyecto/src/actividad/actividad.h
+
+/home/carlos/Escritorio/Equipo-306/Equipo-306/codigoProyecto/src/actividad/actividad.h
+iostream
+-
+string
+-
+vector
+-
+

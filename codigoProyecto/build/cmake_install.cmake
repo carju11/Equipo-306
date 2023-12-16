@@ -1,4 +1,4 @@
-# Install script for directory: /home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto
+# Install script for directory: /home/carlos/Escritorio/Equipo-306/Equipo-306/codigoProyecto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,14 +37,9 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/src/cmake_install.cmake")
+  include("/home/carlos/Escritorio/Equipo-306/Equipo-306/codigoProyecto/build/src/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nicolas/Escritorio/proyectoiso/Equipo-306/codigoProyecto/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/carlos/Escritorio/Equipo-306/Equipo-306/codigoProyecto/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
