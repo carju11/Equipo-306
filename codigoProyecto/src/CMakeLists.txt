@@ -1,0 +1,3 @@
+add_subdirectory(actividad)
+add_subdirectory(actividades)
+add_subdirectory(menu)

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmenu.a  CMakeFiles/menu.dir/menu-main.cc.o
+/usr/bin/ranlib libmenu.a
